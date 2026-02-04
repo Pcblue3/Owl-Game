@@ -1,7 +1,43 @@
-[gd_scene load_steps=5 format=3 uid="uid://cyh5py1yadx3s"]
+[gd_scene load_steps=10 format=3 uid="uid://cyh5py1yadx3s"]
 
 [ext_resource type="Script" uid="uid://dgel6bedihihn" path="res://static_body_2d.gd" id="1_8kmve"]
-[ext_resource type="Texture2D" uid="uid://exnr7w1f26re" path="res://Assets/World/world_tileset.png" id="2_j8slx"]
+[ext_resource type="Texture2D" uid="uid://d1c0scfqan0st" path="res://Assets/Sprites/belt.png" id="2_8kmve"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8kmve"]
+atlas = ExtResource("2_8kmve")
+region = Rect2(0, 0, 16, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j8slx"]
+atlas = ExtResource("2_8kmve")
+region = Rect2(16, 0, 16, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rdlk1"]
+atlas = ExtResource("2_8kmve")
+region = Rect2(32, 0, 16, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ru5fh"]
+atlas = ExtResource("2_8kmve")
+region = Rect2(48, 0, 16, 21)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qxqhu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8kmve")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8slx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rdlk1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ru5fh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rdlk1"]
 size = Vector2(16, 16)
@@ -13,15 +49,17 @@ size = Vector2(16, 1)
 position = Vector2(-141, -17)
 script = ExtResource("1_8kmve")
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = -1
+position = Vector2(141, 14.5)
+sprite_frames = SubResource("SpriteFrames_qxqhu")
+autoplay = "default"
+frame = 3
+frame_progress = 0.707832
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(141, 17)
 shape = SubResource("RectangleShape2D_rdlk1")
-
-[node name="WorldTileset" type="Sprite2D" parent="."]
-position = Vector2(141, 17)
-texture = ExtResource("2_j8slx")
-region_enabled = true
-region_rect = Rect2(0, 0, 16, 16)
 
 [node name="Area2D" type="Area2D" parent="."]
 

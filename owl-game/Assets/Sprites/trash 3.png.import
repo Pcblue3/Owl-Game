@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fogrfckrohii"
-path="res://.godot/imported/1.png-c17ba4f7157b7859422489391097293e.ctex"
+uid="uid://c2pt5qq605t6y"
+path="res://.godot/imported/trash 3.png-41b59ac2ea9b117092f680ae1ba97478.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/World/Background/game/1.png"
-dest_files=["res://.godot/imported/1.png-c17ba4f7157b7859422489391097293e.ctex"]
+source_file="res://Assets/Sprites/trash 3.png"
+dest_files=["res://.godot/imported/trash 3.png-41b59ac2ea9b117092f680ae1ba97478.ctex"]
 
 [params]
 

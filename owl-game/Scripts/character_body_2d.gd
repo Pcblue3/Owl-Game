@@ -14,7 +14,6 @@ const JUMP_VELOCITY = -250.0
 
 func _physics_process(delta: float) -> void:
 	
-	print(test)
 		
 	
 	if Input.is_action_just_pressed("pick up") and Globals.can_pick_up:

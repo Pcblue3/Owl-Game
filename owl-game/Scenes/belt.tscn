@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://cfrho8govafhy"]
+
+[ext_resource type="Texture2D" uid="uid://d1c0scfqan0st" path="res://Assets/Sprites/belt.png" id="1_syw6r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_awhei"]
+atlas = ExtResource("1_syw6r")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nii51"]
+atlas = ExtResource("1_syw6r")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_skxp8"]
+atlas = ExtResource("1_syw6r")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_urkkh"]
+atlas = ExtResource("1_syw6r")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ob2jt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_awhei")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nii51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_skxp8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_urkkh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_ob2jt")
+autoplay = "default"
+frame_progress = 0.918475
