@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://xt88e43c0wu4"
+path="res://.godot/imported/GDC Awakening.mp3-1159594ec1a1989a919a6677bffb86f7.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/GDC Awakening.mp3"
+dest_files=["res://.godot/imported/GDC Awakening.mp3-1159594ec1a1989a919a6677bffb86f7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
