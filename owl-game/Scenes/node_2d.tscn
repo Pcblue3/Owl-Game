@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cm3ep2s7lplt4" path="res://Scenes/owl.tscn" id="1_hvaui"]
 [ext_resource type="Texture2D" uid="uid://exnr7w1f26re" path="res://Assets/World/world_tileset.png" id="2_2ooml"]
+[ext_resource type="PackedScene" uid="uid://ywkoc8gxcb1o" path="res://Scenes/weapon_hit_box.tscn" id="2_fg7i4"]
 [ext_resource type="PackedScene" uid="uid://b06iva1apde4e" path="res://Scenes/spear.tscn" id="2_p20hg"]
 [ext_resource type="Texture2D" uid="uid://davn2rl064042" path="res://Scripts/Sprite-0001.png" id="4_p20hg"]
 [ext_resource type="PackedScene" uid="uid://cyh5py1yadx3s" path="res://conveyer_belt.tscn" id="5_he4j0"]
@@ -238,6 +239,9 @@ position = Vector2(95, 151)
 zoom = Vector2(3.6, 3.6)
 limit_left = 0
 limit_bottom = 215
+
+[node name="WeaponHitBox" parent="owl" unique_id=75900575 instance=ExtResource("2_fg7i4")]
+scale = Vector2(0.46859327, 0.6869693)
 
 [node name="Node2D2" parent="." unique_id=528826720 instance=ExtResource("2_p20hg")]
 position = Vector2(845, 162)
