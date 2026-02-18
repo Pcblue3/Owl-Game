@@ -243,6 +243,9 @@ limit_bottom = 215
 [node name="WeaponHitBox" parent="owl" unique_id=75900575 instance=ExtResource("2_fg7i4")]
 scale = Vector2(0.46859327, 0.6869693)
 
+[node name="Timer" type="Timer" parent="owl" unique_id=1388281894]
+one_shot = true
+
 [node name="Node2D2" parent="." unique_id=528826720 instance=ExtResource("2_p20hg")]
 position = Vector2(845, 162)
 
@@ -403,6 +406,7 @@ shape = SubResource("RectangleShape2D_fg7i4")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="secret" unique_id=1542378541]
 libraries/ = SubResource("AnimationLibrary_fg7i4")
 
+[connection signal="timeout" from="owl/Timer" to="owl" method="_on_timer_timeout"]
 [connection signal="body_entered" from="Node2D" to="owl" method="_on_node_2d_body_entered"]
 [connection signal="body_entered" from="Area2D" to="owl" method="_on_area_2d_body_entered"]
 [connection signal="pressed" from="CanvasLayer/Button2" to="owl" method="_on_button_2_pressed"]
